@@ -1,5 +1,4 @@
-[![Scala CI](https://github.com/ScalaConsultants/zio-dotty-quickstart.g8/workflows/Scala%20CI/badge.svg?branch=master)](https://github.com/ScalaConsultants/zio-dotty-quickstart.g8/actions?query=workflow%3A%22Scala+CI%22+branch%3Amaster)
-[![Scala Steward badge](https://img.shields.io/badge/Scala_Steward-helping-brightgreen.svg?style=flat&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAMAAAARSr4IAAAAVFBMVEUAAACHjojlOy5NWlrKzcYRKjGFjIbp293YycuLa3pYY2LSqql4f3pCUFTgSjNodYRmcXUsPD/NTTbjRS+2jomhgnzNc223cGvZS0HaSD0XLjbaSjElhIr+AAAAAXRSTlMAQObYZgAAAHlJREFUCNdNyosOwyAIhWHAQS1Vt7a77/3fcxxdmv0xwmckutAR1nkm4ggbyEcg/wWmlGLDAA3oL50xi6fk5ffZ3E2E3QfZDCcCN2YtbEWZt+Drc6u6rlqv7Uk0LdKqqr5rk2UCRXOk0vmQKGfc94nOJyQjouF9H/wCc9gECEYfONoAAAAASUVORK5CYII=)](https://scala-steward.org)
+[![Scala CI](https://github.com/dancewithheart/zio-dotty-quickstart.g8/workflows/Scala%20CI/badge.svg?branch=master)](https://github.com/dancewithheart/zio-dotty-quickstart.g8/actions?query=workflow%3A%22Scala+CI%22+branch%3Amaster)
 
 ## zio-dotty-quickstart.g8
 
@@ -8,7 +7,7 @@ A [Giter8][g8] template for a basic Dotty application build using [ZIO]
 ### Setting up the project
 
 ```shell script
-sbt new ScalaConsultants/zio-dotty-quickstart.g8
+sbt new dancewithheart/zio-dotty-quickstart.g8
 ```
 
 ### Run tests
