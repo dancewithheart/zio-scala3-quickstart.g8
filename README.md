@@ -3,7 +3,7 @@
 ## zio-dotty-quickstart.g8
 
 A [Giter8][g8] template for a basic Dotty application build using [ZIO]
-Based on https://github.com/ScalaConsultants/zio-dotty-quickstart.g8
+Based on [ScalaConsultants/zio-dotty-quickstart.g8]
 
 ### Setting up the project
 
@@ -17,3 +17,7 @@ sbt new dancewithheart/zio-dotty-quickstart.g8
 cd <project-name>
 sbt test
 ```
+
+[g8]: http://www.foundweekends.org/giter8/
+[zio]: https://zio.dev/
+[ScalaConsultants/zio-dotty-quickstart.g8]: https://github.com/ScalaConsultants/zio-dotty-quickstart.g8
