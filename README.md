@@ -1,4 +1,4 @@
-[![Scala CI](https://github.com/dancewithheart/zio-dotty-quickstart.g8/actions/workflows/scala.yml/badge.svg?branch=master)](https://github.com/dancewithheart/zio-dotty-quickstart.g8/actions/workflows/scala.yml?query=branch%3Amaster)
+[![Scala CI](https://github.com/dancewithheart/zio-scala3-quickstart.g8/actions/workflows/scala.yml/badge.svg?branch=master)](https://github.com/dancewithheart/zio-scala3-quickstart.g8/actions/workflows/scala.yml?query=branch%3Amaster)
 
 ## zio-dotty-quickstart.g8
 
