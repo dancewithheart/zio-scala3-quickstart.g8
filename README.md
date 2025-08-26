@@ -2,8 +2,8 @@
 
 ## zio-dotty-quickstart.g8
 
-A [Giter8][g8] template for a basic Dotty application build using [ZIO]
-Based on [ScalaConsultants/zio-dotty-quickstart.g8]
+A [Giter8][g8] template for a basic Dotty application build using [ZIO].
+Based on (currently unmaintained?) [ScalaConsultants/zio-dotty-quickstart.g8].
 
 ### Setting up the project
 
