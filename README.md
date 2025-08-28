@@ -8,7 +8,7 @@ Based on (currently unmaintained?) [ScalaConsultants/zio-dotty-quickstart.g8].
 ### Setting up the project
 
 ```shell script
-sbt new dancewithheart/zio-dotty-quickstart.g8
+sbt new dancewithheart/zio-scala3-quickstart.g8
 ```
 
 ### Run tests
