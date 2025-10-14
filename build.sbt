@@ -4,7 +4,6 @@ lazy val root = project
   .in(file("."))
   .settings(
     name := "zio-scala3-quickstart",
-    scalaVersion := "3.7.3",
     Test / test := {
       val _ = (Test / g8Test).toTask("").value
     },
