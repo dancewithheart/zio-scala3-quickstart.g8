@@ -3,7 +3,7 @@ val zioVersion = "2.1.21"
 lazy val root = project
   .in(file("."))
   .settings(
-    name := "zio-dotty-quickstart",
+    name := "zio-scala3-quickstart",
     Test / test := {
       val _ = (Test / g8Test).toTask("").value
     },
