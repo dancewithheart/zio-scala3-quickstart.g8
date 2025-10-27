@@ -8,7 +8,7 @@ lazy val root = project
         name := "$name$",
         organization := "$organization$",
         version := "0.0.1",
-        scalaVersion := "$dotty_version$"
+        scalaVersion := "$scala3_version$"
       )
     ),
     libraryDependencies ++= Seq(
