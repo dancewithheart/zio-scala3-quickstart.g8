@@ -4,6 +4,15 @@ on:
   push:
     branches:
       - master # default branch of the project
+
+concurrency:
+  # Only run once for latest commit per ref and cancel other (previous) runs.
+  group: dependency-graph-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
 jobs:
   dependency-graph:
     name: Update Dependency Graph
