@@ -2,7 +2,16 @@
 
 ## zio-scala3-quickstart.g8
 
-A [Giter8][g8] template for a basic Scala 3 application build using [ZIO].
+A [Giter8][g8] template for a secure by default Scala 3 application based on [ZIO].
+
+Projects generated from this [Giter8][g8] template include a secure baseline for GitHub:
+* CI pipeline runs tests on each push/PR (`scala.yml`)
+* [Dependency graph submission](https://docs.github.com/en/code-security/how-tos/secure-your-supply-chain/secure-your-dependencies/using-the-dependency-submission-api) using [sbt-dependency-submission](https://github.com/scalacenter/sbt-dependency-submission) enables GitHub vulnerability detection (`dependency-graph.yml`)
+* [Dependabot config](https://docs.github.com/en/code-security/concepts/supply-chain-security/about-dependabot-alerts) keeps GitHub Actions up to date (`dependabot.yml`)
+* [OpenSSF Scorecard](https://github.com/ossf/scorecard) monitors supply chain risks (`scorecard.yml`)
+
+These defaults improve visibility of vulnerabilities, reduce supply-chain risk, and require no additional setup.
+
 Based on (currently unmaintained?) [ScalaConsultants/zio-dotty-quickstart.g8].
 
 ### Setting up the project
