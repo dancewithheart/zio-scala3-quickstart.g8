@@ -12,7 +12,7 @@ Projects generated from this [Giter8][g8] template include a secure baseline for
 
 These defaults improve visibility of vulnerabilities, reduce supply-chain risk, and require no additional setup.
 
-Based on (currently unmaintained?) [ScalaConsultants/zio-dotty-quickstart.g8].
+Based on [ScalaConsultants/zio-dotty-quickstart.g8].
 
 ### Setting up the project
 
