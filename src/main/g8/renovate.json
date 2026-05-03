@@ -14,7 +14,7 @@
 
   "packageRules": [
     {
-      "description": "Let Scala Steward handle normal Scala/Maven dependency updates",
+      "description": "Let Scala Steward handle normal Scala/Maven dependency updates if the project enables Scala Steward",
       "matchDatasources": ["maven", "sbt-plugin"],
       "enabled": false
     },
@@ -40,12 +40,12 @@
   "customManagers": [
     {
       "customType": "regex",
-      "description": "Update scala3_version in Giter8 default.properties",
+      "description": "Update scalaVersion in build.sbt",
       "managerFilePatterns": [
-        "/^src/main/g8/default\\.properties$/"
+        "/^build\\.sbt$/"
       ],
       "matchStrings": [
-        "scala3_version=(?<currentValue>\\d+\\.\\d+\\.\\d+)"
+        "scalaVersion\\s*:=\\s*\"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
       ],
       "depNameTemplate": "org.scala-lang:scala3-compiler_3",
       "datasourceTemplate": "maven",
