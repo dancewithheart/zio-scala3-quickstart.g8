@@ -1,0 +1,55 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices"
+  ],
+  "timezone": "Europe/Warsaw",
+  "labels": ["dependencies", "renovate"],
+
+  "dependencyDashboard": true,
+  "configMigration": true,
+
+  "separateMajorMinor": true,
+  "separateMinorPatch": false,
+
+  "packageRules": [
+    {
+      "description": "Let Scala Steward handle normal Scala/Maven dependency updates if the project enables Scala Steward",
+      "matchDatasources": ["maven", "sbt-plugin"],
+      "enabled": false
+    },
+    {
+      "description": "Keep sbt version updates enabled",
+      "matchDatasources": ["sbt-package"],
+      "enabled": true
+    },
+    {
+      "description": "Group GitHub Actions updates",
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions",
+      "addLabels": ["github-actions", "security-hardening"]
+    },
+    {
+      "description": "Keep Scala version updates visible and separate",
+      "matchPackageNames": ["org.scala-lang:scala3-compiler_3"],
+      "groupName": "scala-version",
+      "addLabels": ["scala", "toolchain"]
+    }
+  ],
+
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update scalaVersion in build.sbt",
+      "managerFilePatterns": [
+        "/^build\\.sbt$/"
+      ],
+      "matchStrings": [
+        "scalaVersion\\s*:=\\s*\"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
+      ],
+      "depNameTemplate": "org.scala-lang:scala3-compiler_3",
+      "datasourceTemplate": "maven",
+      "versioningTemplate": "maven"
+    }
+  ]
+}
