@@ -7,7 +7,7 @@ on:
 
 concurrency:
   # Only run once for latest commit per ref and cancel other (previous) runs.
-  group: dependency-graph-${{ github.ref }}
+  group: dependency-graph-\${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
