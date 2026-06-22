@@ -17,6 +17,11 @@ on:
 # Declare default permissions as read only.
 permissions: read-all
 
+concurrency:
+  # Only run once for latest commit per ref and cancel other (previous) runs.
+  group: dependency-graph-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   analysis:
     name: Scorecard analysis
