@@ -6,6 +6,12 @@
   "timezone": "Europe/Warsaw",
   "labels": ["dependencies", "renovate"],
 
+  "enabledManagers": [
+    "github-actions",
+    "custom.regex",
+    "renovate-config"
+  ],
+
   "dependencyDashboard": true,
   "configMigration": true,
 
@@ -14,23 +20,14 @@
 
   "packageRules": [
     {
-      "description": "Let Scala Steward handle normal Scala/Maven dependency updates",
-      "matchDatasources": ["maven", "sbt-plugin"],
-      "enabled": false
-    },
-    {
-      "description": "Keep sbt version updates enabled",
-      "matchDatasources": ["sbt-package"],
-      "enabled": true
-    },
-    {
       "description": "Group GitHub Actions updates",
       "matchManagers": ["github-actions"],
       "groupName": "github-actions",
       "addLabels": ["github-actions", "security-hardening"]
     },
     {
-      "description": "Keep Scala version updates visible and separate",
+      "description": "Keep Scala version in Giter8 properties visible and separate",
+      "matchManagers": ["custom.regex"],
       "matchPackageNames": ["org.scala-lang:scala3-compiler_3"],
       "groupName": "scala-version",
       "addLabels": ["scala", "toolchain"]
