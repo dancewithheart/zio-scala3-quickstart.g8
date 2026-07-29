@@ -20,6 +20,6 @@ jobs:
         distribution: 'adopt'
         java-version: 21
     - name: Set up Scala and SBT
-      uses: sbt/setup-sbt@9d56cf12e9b58d219605e1d8bfe69a8395fedde0 # v1     
+      uses: sbt/setup-sbt@d059c39de700f4cc5cb64f9f56577315e44a984e # v1     
     - name: Run tests
       run: sbt clean test
