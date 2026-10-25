@@ -2,6 +2,7 @@ val zioVersion = "2.1.27"
 
 lazy val root = project
   .in(file("."))
+  .enablePlugins(ScriptedPlugin) // workaround untill https://github.com/foundweekends/giter8/pull/1088
   .settings(
     name := "zio-scala3-quickstart",
     libraryDependencies ++= Seq(
