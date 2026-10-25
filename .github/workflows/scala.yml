@@ -22,4 +22,4 @@ jobs:
     - name: Set up Scala and SBT
       uses: sbt/setup-sbt@ecad189dd245444b9ae0a0cd5922fd938b88906f # v1     
     - name: Run tests
-      run: sbt clean test
+      run: sbt "clean ; test ; g8Test"
