@@ -12,7 +12,9 @@
     "renovate-config"
   ],
 
-  "dependencyDashboard": true,
+  "dependencyDashboard": {
+    "enabled": true
+  },
   "configMigration": true,
 
   "separateMajorMinor": true,
